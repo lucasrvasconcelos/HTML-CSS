@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+* {padding: 0; margin: 0; box-sizing: border-box; font-family: monospace;}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: lightcyan;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    width: 330px;
+    height: 600px;
+
+    background-color: lightblue;
+    border-radius: 5px;
+    border:1px solid rgba(0, 0, 0, 0.603);
+    box-shadow: 0 0 10px black;
+
+    overflow: hidden;
+    position: relative;
+}
+
+main > .titulo > h3 {
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.719);
+    padding: 5px;
+    font-size: 2rem;
+    height: 80px;
+
+    border-bottom:1px solid rgba(0, 0, 0, 0.603);
+}
+main > .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: calc(100% - 80px);
+    gap: 20px;
+}
+
+main > .input div{
+    height: 80px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+main > .input input[type=number]{
+    height: 30px;
+    outline: none;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.473);
+}
+
+main > .input input[type=submit]{
+    width: 100px;
+    outline: none;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px black groove;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+main > .input input[type=submit]:hover {
+    border: 1px black dotted;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.479);
+    transform: scaleY(100%);
+}
+ 
+.animate {
+    animation: Button-Hover .2s ease-in-out both alternate-reverse;
+}
+
+@keyframes Button-Hover {
+    0%{transform: scaleY(100%)}
+    100%{transform: scaleY(-100%)}
+    /* 100%{transform: scaleY(200%)} */
+}

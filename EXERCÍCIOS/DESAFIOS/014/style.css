@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url('https://s2.glbimg.com/dcHlBThUozwOx3bN9npqQM_kpRA=/0x0:1600x900/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2019/A/s/r5xn4BR06oxdtg8K7TDA/papel-de-parede-transparente.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+main .imagens {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(211, 211, 211, 0.692);
+}
+
+main .imagens > img {
+    width: 300px;
+}
+
+#Celular {display: block;}
+#Tablet{display: none;}
+#Laptop{display: none;}
+#Desktop{display: none;}
+#Televisão{display: none;}
+
+/* Tablet */
+
+@media screen and (min-width:481px) and (max-width:768px){
+    main {
+        background-image: url('https://i.etsystatic.com/28615394/r/il/479c50/3581870008/il_570xN.3581870008_cw9m.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #Celular {display: none;}
+    #Tablet{display: block;}
+    #Laptop{display: none;}
+    #Desktop{display: none;}
+    #Televisão{display: none;}
+}
+
+/*  Laptop  */
+
+@media screen and (min-width:769px) and (max-width:1024px){
+    main {
+        background-image: url('https://www.notebookcheck.info/uploads/tx_nbc2/MicrosoftSurfaceLaptop3-15__2__01.JPG');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #Celular {display: none;}
+    #Tablet{display: none;}
+    #Laptop{display: block;}
+    #Desktop{display: none;}
+    #Televisão{display: none;}
+}
+
+/* Desktop */
+
+@media screen and (min-width:1025px) and (max-width:1200px){
+    main {
+        background-image: url('https://marcasdeprodutos.com.br/wp-content/uploads/2021/05/desktop-computer-500x500-1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #Celular {display: none;}
+    #Tablet{display: none;}
+    #Laptop{display: none;}
+    #Desktop{display: block;}
+    #Televisão{display: none;}
+}
+
+/* TV */
+
+@media screen and (min-width:1201px ){
+    main {
+        background-image: url('https://d1dtruvuor2iuy.cloudfront.net/media/catalog/product/0/0/000274443_50v6.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #Celular {display: none;}
+    #Tablet{display: none;}
+    #Laptop{display: none;}
+    #Desktop{display: none;}
+    #Televisão{display: block;}
+}

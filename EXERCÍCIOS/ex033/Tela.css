@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+menu {
+    padding: 10px;
+}
+
+menu > ul {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+menu > ul > li {
+    list-style: none;
+    padding:10px;
+}
+
+main > article > h1 {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+main > article > p {
+    padding: 20px;
+    text-align: justify;
+    margin: auto;
+    width: 400px;
+}
+
+

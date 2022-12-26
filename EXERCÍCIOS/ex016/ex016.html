@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente</title>
+    <style>
+        body {
+           height:200%;
+        }
+        .BackgroudImage {
+            width: 60vh;
+            height:10vh;
+            margin-top: 3px;
+            margin-bottom: 3px;
+            background-image:linear-gradient(to right, white, blue);
+            border: solid black 2px;
+        }
+
+        .BackgroudImage2 {
+            width: 60vh;
+            height:10vh;
+            margin-top: 3px;
+            margin-bottom: 3px;
+            background-image:linear-gradient(to right, #FDCD33, #E3A52D,#FAA63E,#E3772D, #FD6733);
+            border: solid black 2px;
+        }
+
+        .BackgroudImage3 {
+            width: 60vh;
+            height:30vh;
+            margin-top: 3px;
+            margin-bottom: 3px;
+            background-image:linear-gradient(45deg, rgb(255, 255, 255), rgb(255, 23, 182));
+            border: solid black 2px;
+        }
+
+        .BackgroudImage4 {
+            width: 60vh;
+            height:30vh;
+            margin-top: 3px;
+            margin-bottom: 3px;
+            background-image:linear-gradient(-45deg, rgb(255, 0, 0), rgb(217, 255, 0));
+            border: solid black 2px;
+        }
+
+        .BackgroudImage5 {
+            width: 60vh;
+            height:30vh;
+            margin-top: 3px;
+            margin-bottom: 30px;
+            background-image:radial-gradient(circle, rgb(0, 255, 21), rgb(132, 0, 255));
+            border: solid black 2px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Gradiente</h2>
+
+    <h4>Para fazer o efeito gradiente, foi usado o comando</h4>
+
+    <p>background-image:linear-gradient(to right, white, blue);</p>
+    <div class="BackgroudImage" title="BackgroudImage"> </div>
+
+    <p>background-image:linear-gradient(to right, #FDCD33, #E3A52D,#FAA63E,#E3772D, #FD6733);</p>
+    <div class="BackgroudImage2" title="BackgroudImage2"> </div>
+
+    <p>background-image:linear-gradient(45deg, rgb(255, 255, 255), rgb(255, 23, 182));</p>
+    <div class="BackgroudImage3" title="BackgroudImage3"> </div>
+
+    <p>background-image:linear-gradient(-45deg, rgb(255, 255, 255), rgb(217, 255, 0));</p>
+    <div class="BackgroudImage4" title="BackgroudImage4"> </div>
+
+    <p>background-image:radial-gradient(circle, rgb(0, 255, 21), rgb(132, 0, 255));</p>
+    <div class="BackgroudImage5" title="BackgroudImage5"> </div>
+    
+</body>
+</html>

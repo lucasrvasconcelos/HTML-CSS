@@ -1,0 +1,97 @@
+* {
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+img {
+    width: 100px;
+    height: 100px ;
+
+    /* transform: translate(50%, 50%);  -- Desloca para o eixo X e Y (Simplificado)*/
+    /* transform: translateX(50%);      -- Desloca para o eixo X*/
+    /* transform: translateY(50%);      -- Desloca para o eixo Y*/
+    /* transform: translateZ()          -- Desloca para o eixo Z*/
+
+    /* transform: scale(1.1, 1.2);      -- Muda a escala (X, Y)*/   
+
+    /* transform: rotate(45deg);        -- Faz a rotação (Z) */
+
+    /* transform: skew(10deg, 10deg);   -- Muda a orientação da imagem*/
+
+}
+
+.box1 {
+    transition-property: border-radius, background-color ; /*Informo quais transições serção feitas*/
+    transition-duration: 1s;    /* -- Duração da transição*/
+    /* transition-delay: 1s; -- Faz com que a animação demore para começar */
+    transition-timing-function: ease-in-out;
+    
+
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 214, 0.87);
+    border-radius: 10px;
+    
+}
+
+.box1:hover {
+    background-color: brown;
+    border-radius: 100%;
+}
+
+.KeyFrames{
+    height: 200px;
+    background-color: cadetblue;
+    border: 2px solid black;
+}
+
+.box2 {
+    animation: fly 2s alternate;    
+}
+
+@keyframes fly {
+    from{
+        transform: translateX(0vw);
+
+    } 
+    
+    to {
+        transform: translateX(calc(100vw - 200px));
+    }
+    
+}
+
+
+.box3 {
+    animation: fly2 2s alternate linear;    
+}
+
+@keyframes fly2 {
+
+    0% {
+        transform: translate(0vw, 0%);
+    } 
+    50% { 
+        transform: translate(500px, 100px);
+    }
+    100% {
+        transform: translate(calc(100vw - 200px),0);
+    }
+    
+}
+
+.box4 {
+    /* animation-name: ;                    -- Nome da Animação*/
+    /* animation-duration: ;                -- Duração da animação */
+    /* animation-timing-function: ;         -- Velocidade em cada frame */
+    /* animation-delay: ;                   -- Delay para que comece a animação */
+    /* animation-iteration-count:           -- Número de vez em que a animação deve ser executada; */
+    /* animation-direction:;                -- Direção que será feita a animação*/
+    /* animation-fill-mode: ;               -- Define quais valores são aplicados antes, e depois da animação*/
+    /* animation-play-state: ;              -- Define se a animação deve ser executada (paused e running)*/
+
+    animation: fly 1.5s linear infinite alternate;
+}

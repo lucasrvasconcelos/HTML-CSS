@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-Index.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/9073/9073032.png" type="image/x-icon">
+    <title>Index</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(45deg , rgba(0, 0, 255, 0.493), rgba(255, 0, 0, 0.5));
+            background-size: 300%;
+            background-repeat: no-repeat;
+            background-position: 0;
+            
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0;
+            margin: 10px 0;
+            /* background-color: lightgrey; */
+
+            animation: Back-Animation 10s ease-in-out alternate infinite;
+        }
+
+        @keyframes Back-Animation {
+            to {
+                background-position: 100% 100%;
+            }
+        }
+
+        .iframe {
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        iframe {
+            width:800px;
+            height: 83vh;
+            border: 1px solid black;
+        }
+
+        .menu {
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            overflow: auto;
+            width: 500px;
+            height: 600px;
+        }
+
+
+        .menu > a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            width: 200px;
+            height: 50px;
+            margin: 6px;
+            border: 1px solid white;
+            box-shadow: 0 0 10px lightslategray;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: monospace;
+            font-size: 1em;
+            color: black;
+            transition: all 0.2s;
+        }
+
+        .menu > a:hover {
+            background-color: transparent;
+            border: 1px solid black;
+            color: black;
+            box-shadow: 0 0 5px black;
+            transform: scale(110%);
+        }
+
+        .menu > a > img {
+            width: 30px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        .box-1 {
+            background-color: lightblue;
+        }
+
+        .box-2 {
+            background-color: lightcoral;
+        }
+
+        .box-3 {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <div class="menu">
+                <a href="./Padrão.html" target="Frame"><img src="https://cdn-icons-png.flaticon.com/512/4999/4999606.png" alt="Home"></a>
+                <a href="./D-Flex.html" target="Frame">Display Flex</a>
+                <a href="./D-Flex-Row.html" target="Frame">Row</a>
+                <a href="./D-Flex-Row-Reverse.html" target="Frame">Row Reverse</a>
+                <a href="./D-Flex-Column.html" target="Frame">Column</a>
+                <a href="./D-Flex-Column-Reverse.html" target="Frame">Column-Reverse</a>
+                <a href="./D-Flex-Row-Flex-Start.html" target="Frame">Row/Flex-start</a>
+                <a href="./D-Flex-Row-Flex-End.html" target="Frame">Row/Flex-End</a>
+                <a href="./D-Flex-Row-Center.html" target="Frame">Row/Center</a>
+                <a href="./D-Flex-Row-Space-Between.html" target="Frame">Row/Space-Between</a>
+                <a href="./D-Flex-Row-Space-Around.html" target="Frame">Row/Space-Around</a>
+                <a href="./D-Flex-Row-Center-Flex-Start.html" target="Frame">Row/Center/Flex-Start</a>
+                <a href="./D-Flex-Row-Center-Flex-End.html" target="Frame">Row/Center/Flex-End</a>
+                <a href="./D-Flex-Row-Center-Center.html" target="Frame">Row/Center/Center</a>
+                <a href="./D-Flex-Row-Center-Stretch.html" target="Frame">Row/Center/Stretch</a>
+                <a href="./D-Flex-Row-Center-Baseline.html" target="Frame">Row/Center/Baseline</a>
+                <a href="#teste" style="transition: all 10s;">AVANÇAR - FLEX-WRAP</a>
+        
+            </div>
+
+            <div class="iframe">
+                <iframe src="./Padrão.html" name="Frame" frameborder="0"></iframe>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="menu" >
+                <a href="./D-Flex-Row-Center-Center.html" target="Frame-2" name="teste"><img src="https://cdn-icons-png.flaticon.com/512/4999/4999606.png" alt="Home"></a>
+                <a href="./flex-wrap/No-Wrap.html" target="Frame-2" >No-Wrap</a>
+                <a href="./flex-wrap/Wrap.html" target="Frame-2">Wrap</a>
+                <a href="./flex-wrap/Flex-Flow.html" target="Frame-2">Flex-Flow</a>
+                <a href="./flex-wrap/Wrap-Reverse.html" target="Frame-2">Wrap-Reverse</a>
+                <a href="./flex-wrap/Align-content-Flex-Start.html" target="Frame-2">Align-content-Flex-Start</a>
+                <a href="./flex-wrap/Align-content-Flex-End.html" target="Frame-2">Align-content-Flex-End</a>
+                <a href="./flex-wrap/Align-content-Flex-Center.html" target="Frame-2">Align-content-Center</a>
+                <a href="./flex-wrap/Align-content-Flex-Space-Between.html" target="Frame-2">Space-Between</a>
+                <a href="./flex-wrap/Align-content-Flex-Space-Around.html" target="Frame-2">Space-Around</a>
+                <a href="./flex-wrap/Align-content-Gap.html" target="Frame-2">Gap</a>
+                <a href="./flex-box/Order.html" target="Frame-2">Order</a>
+                <a href="./flex-box/Flex-grow.html" target="Frame-2">Flex-Grow</a>
+                <a href="./flex-box/Flex-grow-1.html" target="Frame-2">Flex-Grow(Other)</a>
+                <a href="./flex-box/Flex-shrink.html" target="Frame-2">Flex-shrink</a>
+                <a href="./flex-box/Flex-Basis.html" target="Frame-2">Flex-basis</a>
+                <a href="./flex-box/Flex.html" target="Frame-2">Flex</a>
+                <a href="./flex-box/Align-Self.html" target="Frame-2">Align-self</a>
+            </div>
+
+            <div class="iframe">
+                <iframe src="./D-Flex-Row-Center-Center.html" name="Frame-2" frameborder="0" id="iframe-2"></iframe>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

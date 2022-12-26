@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(90deg);
+    animation: none;
+}
+
+.main> img{
+    width: 150px;
+    height: auto;
+}
+
+.main> img:hover {
+    animation: is-bouncing 1s ease-in infinite alternate;
+}
+
+@keyframes is-bouncing {
+    from {
+        transform: translateX(0px);
+    } to {
+        transform: translateX(20px); 
+    }
+}

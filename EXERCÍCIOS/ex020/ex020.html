@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+</head>
+<style>
+
+    /* :  = pseudo-class 
+       :: = pseudo-element  */
+
+
+    div p {
+        display: none;
+    }
+
+    div:hover p {
+        display: inline;
+    }
+
+    div > ol > li > a{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        color: rgb(3, 129, 87);
+    }
+
+    /* :hover Muda a propriedade caso seja colocado o mouse em cima*/
+    div > ol > li > a:hover{
+        color: brown;
+        text-decoration: underline;
+    }
+
+    /* :visited irá mudar a propriedade caso o link já tenha sido acessado */
+    div > ol > li > a:visited {
+        color: blue; 
+    }
+
+    /* :active irá mudar a propriedade caso seja clicado em cima */
+    div > ol > li > a:active{
+        color: chartreuse;
+    }
+
+    /* ::before 'Antes' */
+    div > ol > li > a::before{
+        content: '=> ';
+    }
+
+    /* ::after 'Depois' */
+    div > ol > li > a::after{
+        content: ' <=';
+    }
+
+    
+    h1:active{
+        color: chartreuse; 
+    }
+
+</style>
+<body>
+    <div>
+        <h1>Hover é uma pseudoclasse</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste accusamus magnam provident, porro libero, tenetur asperiores reprehenderit recusandae tempora temporibus eaque et ab, eveniet fuga. Numquam ratione culpa atque doloremque.</p>
+    </div>
+    <div>
+        <h1>Modificando Links</h1>
+        <ol>
+            <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        </ol>
+    </div>
+    
+</body>
+</html>

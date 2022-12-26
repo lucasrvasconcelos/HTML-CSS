@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-07</title>
+</head>
+<body>
+    <h1>Abra o Console, Clique F12 </h1>
+
+    <script>
+        //Criar objeto
+
+        let pessoa = {
+            nome   : 'Lucas',
+            idade  : 22,
+            peso   : 90.5,
+            altura : 1.75,
+            doador : true, }
+
+        console.log('Meus dados:')
+        console.log(`Meu nome é ${pessoa.nome} Tenho ${pessoa.idade} anos, peso mais ou menos ${pessoa.peso}KG com uma altura de ${pessoa.altura}m`)
+        console.log(`Doador: ${pessoa['doador']}`)
+        
+        console.log('Calculando IMC')
+        let imc = pessoa.peso / (pessoa.altura * 2)
+        console.log(imc)
+        console.log(`Limitando o valor do IMC ${imc.toFixed(2)}`)
+        
+        console.log('Alterando dados Nome Pessoa')
+        console.log(pessoa.nome)
+        pessoa.nome = 'Lucas Rodrigues'
+        console.log(pessoa.nome)
+
+        let produtos = {
+            descricao : [],
+            preco     : []
+        }
+        
+        console.log('Alterando dados Descrição Produtos')
+        console.log(produtos.descricao)
+        produtos.descricao = [...produtos.descricao ,'Feijão']
+        console.log(produtos.descricao)
+
+        console.log('Alterando dados Preço Produtos')
+        console.log(produtos.preco)
+        produtos.preco = [...produtos.preco , 6.58]
+        console.log(produtos.preco)
+
+        
+        const carros = {
+            marca : ['Ford', 'Fiat', 'Gm'],
+            modelo : ['KA', 'Uno', 'Corsa'],
+            ano : [1999, 2005, 2010]
+        }
+        console.log('Alterando dados Carros')
+        console.log(carros.marca)
+        carros.marca = [...carros.marca, "WV"]
+        console.log(carros.marca)
+        
+    </script>
+</body>
+</html>

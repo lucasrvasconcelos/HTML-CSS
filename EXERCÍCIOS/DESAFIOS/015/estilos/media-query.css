@@ -1,0 +1,346 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: blueviolet;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+main .container {
+    width: 340px;
+    height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+
+    box-shadow: 0 0 10px black;
+
+    border-radius: 8px;
+    overflow: hidden;
+
+    transition: all 0.9s 0s;
+}
+
+main .imagem{
+    background-image: url('https://img.olhardigital.com.br/wp-content/uploads/2022/05/galaxias.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    width: 340px;
+    height: 290px;
+}
+
+main .login{
+    width: 340px;
+    height: 310px;
+    background-color: white;
+    padding: 20px;
+}
+
+main .login > h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+main .login > p {
+    text-align: justify;
+    padding: 10px;
+    color: rgba(128, 128, 128, 0.61);
+    text-shadow: 0 0 0px rgba(0, 0, 0, 0.322);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+form > label > input{
+    width: 100%;
+    border: 0;
+    border: 1px solid rgba(128, 128, 128, 0.61);;
+}
+
+form > label > input:focus {
+    outline: 1px  solid blueviolet;
+}
+
+input {
+    margin: 3px 0;
+    border-radius: 4px;
+    outline: none;
+    padding: 5px;
+}
+
+form #Submit {
+    border: 0;
+}
+
+form #Submit:hover {
+    color: white;
+    text-decoration: underline;
+    background-color: blueviolet;
+    border: 1px solid blueviolet;
+}
+
+form a {
+    border-radius: 4px;
+    background-color: aliceblue;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+form a:hover {
+    color: white;
+    text-decoration: underline;
+    background-color: blueviolet;
+    border: 1px solid blueviolet;
+}
+
+.button {
+    padding: 10px;
+}
+
+/* TABLETS */
+
+
+@media screen and (min-width:481px) and (max-width:768px){
+
+    main .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        width: 90vw;
+        height: 280px;
+        background-color: lightcoral;
+    }
+
+    main {
+        background-image: linear-gradient(to bottom, blueviolet, rgba(0, 255, 255, 0.5));
+    }
+
+    main .login{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+
+    main .imagem{
+        background-image: url('https://img.olhardigital.com.br/wp-content/uploads/2022/05/galaxias.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+    
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/* 
+320px — 480px: dispositivos móveis Feito
+481px — 768px: iPads, tablets Feito
+769px — 1024px: telas pequenas, laptops
+1025px — 1200px: desktops, telas grandes
+1201px e acima —  telas muito grandes, TVs
+*/
+
+@media screen and (min-width:769px) and (max-width:1024px){
+
+    main .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        width: 90vw;
+        height: 450px;
+        background-color: lightcoral;
+    }
+
+    main .container > h1, p{
+        font-size: 1.5rem;
+    }
+    main {
+        background-image: linear-gradient(to bottom, blueviolet, rgba(0, 255, 255, 0.5));
+    }
+
+    main .login{
+        
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+
+    main .imagem{
+        background-image: url('https://img.olhardigital.com.br/wp-content/uploads/2022/05/galaxias.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+    
+        width: 100%;
+        height: 100%;
+    }
+
+    form > label {
+        margin-top: 30px;
+    }
+
+    form > label > input {
+        padding: 10px;
+    }
+
+    form > input {
+        margin-top: 40px;
+    }
+    form > a {
+        margin-top: 2vw;
+    }
+}
+
+ /* 1025px — 1200px: desktops, telas grandes */
+ @media screen and (min-width:1025px) and (max-width:1200px){
+
+    main .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        width: 90vw;
+        height: 500px;
+        background-color: lightcoral;
+    }
+
+    main .container > h1, p{
+        font-size: 2rem;
+    }
+
+    main {
+        background-image: linear-gradient(to bottom, blueviolet, rgba(0, 255, 255, 0.5));
+    }
+
+    main .login{
+        
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+
+    main .imagem{
+        background-image: url('https://img.olhardigital.com.br/wp-content/uploads/2022/05/galaxias.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+    
+        width: 100%;
+        height: 100%;
+    }
+
+    form {
+        margin-top: 40px;
+    }
+
+    form > label {
+        margin-top: 20px;
+    }
+
+    form > label > input {
+        padding: 10px;
+    }
+
+    form > input {
+        margin-top: 50px;
+    }
+    form > a {
+        margin-top: 2vw;
+    }
+ }
+
+ /* 1201px e acima —  telas muito grandes, TVs */
+
+ @media screen and (min-width:1201px){
+
+    main .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 90vw;
+        height: 500px;
+        background-color: lightcoral;
+    }
+
+    main .container > h1, p{
+        font-size: 2rem;
+    }
+
+    main {
+        background-image: linear-gradient(to bottom, blueviolet, rgba(0, 255, 255, 0.5));
+    }
+
+    main .login{
+        
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+
+    main .imagem{
+        background-image: url('https://img.olhardigital.com.br/wp-content/uploads/2022/05/galaxias.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+    
+        width: 100%;
+        height: 100%;
+    }
+
+    form {
+        margin-top: 40px;
+    }
+
+    form > label {
+        margin-top: 20px;
+    }
+
+    form > label > input {
+        padding: 10px;
+    }
+
+    form > input  {
+        margin-top: 50px;
+        
+    }
+
+    form #Submit {
+        border: 1px solid black;
+    }
+
+    form > a {
+        border: 1px solid black;
+        margin-top: 2vw;
+    }
+ }

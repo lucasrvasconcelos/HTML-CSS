@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapas com Iframe</title>
+    <style>
+        .mapas {
+            text-align: center;
+            height: 150vh;
+        }
+
+        .mapas > iframe {
+            border: 1px solid black;
+            width: 97vw;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="mapas">
+            <h1>Mapa do Google</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.268717939477!2d-38.569421585499725!3d-3.751557544340558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7495f3eafb4bf%3A0x338fbfa29fc0189f!2sCRT%20Sistemas!5e0!3m2!1spt-BR!2sbr!4v1669602551860!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h1>Mapa do Waze</h1>
+            <iframe src="https://embed.waze.com/iframe?zoom=16&lat=-3.751563&lon=-38.567233&ct=livemap">
+                Não foi possível carregar o mapa
+            </iframe>
+        </div>
+    </main>
+</body>
+</html>

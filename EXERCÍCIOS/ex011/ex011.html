@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas de acordo com o tamanho da tela</h1>
+    <p>Para fazer esse procedimento é ultilizando as tags "Picture", "Img" e "Source":</p>
+
+    <picture>
+        <source media="(max-width: 540px)" srcset="Imagens\300px.png" type="image/png">
+        <source media="(max-width: 730px)" srcset="Imagens\500px.png" type="image/png">
+        <source media="(max-width: 950px)" srcset="Imagens\700px.png" type="image/png">
+        <img src="Imagens/900px.png" alt="Flexcivel">
+    </picture>
+
+    <h1>Adicionando audio na página</h1>
+    <p>O parâmetro autoplay, tem a função de iniciar a musica assim que p site é acessado</p>
+    <p>O parâmetro controls, tem a funução de mostrar os controles. Obs: O engraçado é que se tiver sem o controls e com autoplay, ele inicia a musica sozinho e não tem como parar</p>
+    <p>Existe também a função loop</p>
+    <p>Existe duas formas de adicionar a musica no site, consulte o código</p>
+    <audio src="Audio/music.mp3" controls <!--autoplay--> ></audio>
+    <audio autoplay controls loop >
+        <!-- source:src -->
+        <source src="Audio/music.mp3" type="audio/mpeg">
+        <source src="Audio/music.ogg" type="audio/ogg">
+        <source src="Audio/music.wav" type="audio/wav">
+    </audio>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background centralizado</title>
+    <style>
+
+        * {
+        margin:0;
+        padding: 0 0;
+        box-sizing: border-box;
+
+        }
+
+        body {
+
+        width: 100vw;
+        height: 100vh;
+
+        /* Shorthand - background */
+
+        /* 
+        background: color image position repeate "size" attachment
+
+        obs: Nem todos navegadores aceitam o size na shorthant, então você declara ele separado */
+
+        background: black url('https://github.com/lucasrvasconcelos/HTML-CSS/blob/main/EXERC%C3%8DCIOS/ex021/Imagens/wallpaper002.jpg?raw=true') center center no-repeat fixed;
+        background-size: cover;
+
+        /* 
+        background-color:rgb(0, 0, 0);
+        background-image:url('https://github.com/lucasrvasconcelos/HTML-CSS/blob/main/EXERC%C3%8DCIOS/ex021/Imagens/wallpaper002.jpg?raw=true');
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-position: center center;
+        background-attachment: fixed; */
+        
+        display: block;
+        text-align: justify;
+        
+        padding: 30px;
+        }
+
+        body h1{
+            text-align: center; 
+            padding: 30px;
+        }
+
+        
+        main {
+            background-color:lightgray;
+
+            min-width: 300px;
+            max-width: 1000px;
+            
+            max-height: fit-content;
+
+            padding: 10px;
+
+            margin: auto;
+
+            border: 1px solid black;
+            border-radius:5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Exemplo de texto</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ullam sunt minima possimus atque tempora. Non laboriosam exercitationem eligendi, id rerum maiores porro, tempora reprehenderit molestias veritatis cum. At, deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum omnis necessitatibus ex quidem repudiandae facilis architecto quisquam eveniet labore in repellendus, quas reprehenderit iste consectetur esse autem itaque sunt et. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, beatae. Dolor eligendi quisquam excepturi perferendis! Possimus, voluptas necessitatibus recusandae nam cumque sapiente consequatur officia illo laborum dolor pariatur praesentium dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum deleniti quas unde, perspiciatis ullam vitae fugiat eaque deserunt ut voluptates aliquid expedita facilis nulla soluta doloribus cum. At, eos cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis alias nesciunt accusantium pariatur in voluptates fugit perferendis nobis ab, at architecto ipsam impedit cum veritatis fugiat eveniet odio! Perspiciatis, fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere soluta minima officia ducimus, commodi, praesentium error sunt accusantium laborum repudiandae repellat atque molestias perferendis voluptatem excepturi asperiores. Blanditiis, necessitatibus amet.</p>
+    </main>
+    
+</body>
+</html>

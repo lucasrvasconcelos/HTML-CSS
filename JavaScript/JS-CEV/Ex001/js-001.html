@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/9105/9105462.png" type="image/x-icon">
+    <title>JS 01</title>
+    <style>
+        body {
+            font-weight: normal;
+            font-size: 1em;
+            background-color: rgb(138, 224, 253);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            margin: auto;
+            width: 800px;
+
+        }
+
+        p {
+            border: 1px solid;
+            border-radius: 5px;
+            width: fit-content;
+            padding: 5px;
+            background-color: lightcoral;
+        }
+
+        p:hover {
+            box-sizing: border-box;
+            animation: P-Animation 0.2s ease-in-out both;
+            box-shadow: 0 0 10px coral;
+            cursor: pointer;
+        }
+
+
+        code {
+            border-radius: 5px;
+            padding: 10px;
+            background-color: lightsalmon;
+        }
+
+        code:hover {
+            animation: code-animation 0.5s ease-in-out both;
+            cursor: pointer;
+        }
+
+
+        @keyframes P-Animation {
+            to {transform: translateY(-15%);
+            border: 1px solid black;}
+        }
+        
+        @keyframes code-animation {
+            to{background-color: salmon;}
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Declaração de variáveis</h1>
+    <p>var nome = window.prompt('Digite seu nome')</p>
+    <h1>Para mostrar na tela</h1>
+    <p>window.alert('Bem vindo, ' + nome)</p>
+    <h1>Para declarar uma variável como real(Float)</h1>
+    <p>var n1 = Number.parseFloat(window.prompt('Primeiro valor'))</p>
+    <h1>Para declarar uma variável como Inteiro(Int)</h1>
+    <p>var n1 = Number.parseInt(window.prompt('Primeiro valor'))</p>
+    <h1>Pode deixar também o próprio js decidir dependendo dos dados recebidos</h1>
+    <p>var n1 = Number(window.prompt('Primeiro valor'))</p>
+    <h1>Para transformar uma variável em string</h1>
+    <p>String(n) ou n.toString()</p>
+    <p>window.alert('Sua média é ' + String(s))</p>
+    <h1>Template string</h1>
+    <code>
+        var nome = window.prompt('Nome: ')<br>
+        var idade = Number.parseInt(window.prompt('Idade: '))<br>
+        window.alert(`Seu nome é ${nome} e sua idade é ${idade}`)<br>
+    </code>
+    <h1>Contar quantas letras tem a variável</h1>
+    <p>variavel.length</p>
+    <h1>Transformar toda a variável em maiúsculo</h1>
+    <p>variavel.toUpperCase()</p>
+    <h1>Transformar toda a variável em minúsculo</h1>
+    <p>variavel.toLowerCase()</p>
+    <h1>Para escrever no html se usa:</h1>
+    <p>document.write(`Texto exemplo ${variavel}`)</p>
+    <p>obs: Entreo do document.write pode se usar tags html</p>
+    <h1>Para fixar casas decimais</h1>
+    <code>document.write(`O número formatado fica ${variavel.toFixed(4)}</code>
+    <h1>Para substituir o ponto por virgula</h1>
+    <code>document.write(`O número formatado fica ${num.toFixed(2).replace('.' , ',')}`)</code>
+    <h1>Para transformar um valor real em reais</h1>
+    <p>document.write(`O número formatado fica ${num.toLocaleString('pt-BR',{style: 'currency', currency:'BRL'})}`)</p>
+
+</body>
+
+<script>
+    
+    // ALERT, CONFIRM E PROMPT
+    //window.alert('Teste de Alert') //Mostra mensagem na tela
+    //window.confirm('Clique em OK') //Mostra mensagem na tela também, mas pede pra apertar Ok
+    //var nome = window.prompt('Digite seu nome') // Mostra mersagem na tela e pede o nome
+    //window.alert('Bem vindo, ' + nome)
+
+
+    // VARIÁVEIS DO TIPO FLOAT
+    // var n1 = Number.parseFloat(window.prompt('Primeiro valor'))
+    // var n2 = Number.parseFloat(window.prompt('Segundo valor valor'))
+    // var s = (n1 + n2) / 2
+    // window.alert('Sua média é ' + s)
+
+    //FORMA SIMPLIFICADA DE MOSTRAR AS VARIÁVEIS
+    //ULTILIZA-SE A CRASE
+    // var nome = window.prompt('Nome: ') 
+    // var idade = Number.parseInt(window.prompt('Idade: '))
+    // window.alert(`Seu nome é ${nome} e sua idade é ${idade}`)
+    // nome.toLowerCase
+
+    //Contar caracteres, transformar em maiusculo e minusculo
+    //Uso do document.write
+    // var nome = window.prompt('Seu nome: ')
+    // document.write(`Seu nome é ${nome}. <br>Possui ${nome.length} letras. <br>Em maiúsculo fica ${nome.toUpperCase()} e em minúsculo fica ${nome.toLowerCase()}<br>`)
+    // document.write(`<a href='https://www.youtube.com'>Link</a>`)
+
+    //Formatação de número(Casas decimais)
+    // var num = 55.6
+    // document.write(`O número recebido foi ${num} <br>`)
+    // document.write(`O número formatado fica ${num.toFixed(4)}`)
+
+    //Formatação de número(Replace)
+    // var num = 55.6
+    // document.write(`O número recebido foi ${num} <br>`)
+    // document.write(`O número formatado fica ${num.toFixed(2).replace('.' , ',')}`)
+
+    // Fomatação de valores
+    // var num = 1255.6
+    // document.write(`O número recebido foi ${num} <br>`)
+    // document.write(`O número formatado fica ${num.toLocaleString('pt-BR',{style: 'currency', currency:'BRL'})} <br>`)
+    // document.write(`O número formatado fica ${num.toLocaleString('EUA',{style: 'currency', currency:'usd'})}`)
+
+
+</script>
+</html>
