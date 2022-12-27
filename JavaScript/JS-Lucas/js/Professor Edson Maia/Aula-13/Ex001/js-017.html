@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas de repetição / Laços</title>
+</head>
+<body>
+    <fieldset>
+        <legend>For</legend>
+        <p id="for"></p>
+
+        <script>
+            for (let i = 1; i < 10 + 1; i++){
+            document.querySelector('#for').textContent = document.write(`Número ${i} <br>`)
+            }
+        </script>
+    </fieldset>
+
+    <fieldset>
+        <legend>For</legend>
+        <p id="for"></p>
+
+        <script>
+            for (let i = 10; i > 0; i--){
+            document.querySelector('#for').textContent = document.write(`Número ${i} <br>`)
+            }
+        </script>
+    </fieldset>
+
+    <fieldset>
+        <legend>For (Array)</legend>
+        <p id="for"></p>
+
+        <script>
+            let motos = ['XRE 190', 'XRE 300', 'CB500X', 'CB500F', 'CG TITAN 160']
+            for (let i = 0; i < motos.length; i++){
+            document.querySelector('#for').textContent = document.write(`Moto ${motos[i]} <br>`)
+            }
+        </script>
+    </fieldset>
+
+    <fieldset>
+        <legend>ForEach</legend>
+        <p id="for"></p>
+
+        <script>
+            let meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio']
+            meses.forEach(function(nomeMeses, i){
+                document.write(`Na posição ${i} temos o mês de ${nomeMeses} <br>`)
+            })
+        </script>
+    </fieldset>
+
+    <fieldset>
+        <legend>ForEach</legend>
+        <p id="for"></p>
+
+        <script>
+            let aMeses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio']
+            aMeses.forEach(function(nomeMeses){
+                document.write(`Mês de ${nomeMeses} <br>`)
+            })
+        </script>
+    </fieldset>
+
+    <fieldset>
+        <legend>While</legend>
+        <p id="While"></p>
+
+        <script>
+            let cont = 0
+            let numeros = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco']
+            while(cont < numeros.length){
+                document.write(`Contador = ${cont} Valor = ${numeros[cont]} <br>`)
+                cont++
+            }
+        </script>
+    </fieldset>
+
+    <fieldset>
+        <legend>Do While</legend>
+        <p id="While"></p>
+
+        <script>
+            let cont2 = 0
+            let numeros2 = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco']
+            
+            do {
+                document.write(`Contador = ${cont2} Valor = ${numeros2[cont2]} <br>`)
+                cont2++
+            } while (cont2 < numeros2.length)
+            
+        </script>
+    </fieldset>
+
+</body>
+</html>

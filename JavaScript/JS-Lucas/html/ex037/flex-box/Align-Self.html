@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display-Flex: Row/Center</title>
+    <style>
+
+        * { margin: 0;
+            padding: 0;
+            box-sizing: border-box;}
+
+        body {
+            background-color: lightgrey;
+            /* width: 100vw;
+            height: 100vh; */
+        }
+        
+        
+        .container {
+            width: 100%;
+            height: 70vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-top: 50px;
+            padding: 10px;
+            flex-wrap: nowrap;
+            align-content: center;
+            animation: Wrap 8s ease-in-out both ;
+            border: 1px solid black;
+        }      
+
+        @keyframes Wrap {
+            from{width: 680px}
+            to { width: 400px;}
+         }
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            box-shadow: 0 0 10px black;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .box:hover {
+            transform: scale(130%);
+            box-shadow: 0 0 5px white;
+        }
+
+        .box-1 {
+            background-color: lightblue;
+            order: 0;
+            
+            flex: 1 0 auto ;
+
+        }
+
+        .box-2 {
+            background-color: lightcoral;
+            order: 0;
+            /* ######################################### */
+            align-self: flex-start;
+            /* ######################################### */
+        }
+
+        .box-3 {
+            background-color: lightgreen;
+            order: 0;
+            /* ######################################### */
+            align-self: flex-end;
+            /* ######################################### */
+        }
+
+        header > h1 {
+            background-color: lightslategrey;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Align-self</h1>
+    </header>
+    <div class="container">
+        <div class="box box-1"></div>
+        <div class="box box-2"></div>
+        <div class="box box-3"></div>
+        <div class="box box-1"></div>
+    
+
+    </div>
+</body>
+</html>

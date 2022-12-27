@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Red+Hat+Mono:wght@300&family=Rubik+Microbe&display=swap');
+
+@media (width:320px) {
+    * {
+        animation: none;
+    }
+    
+}
+:root {
+    --font1: 'Passion One', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+div > h5{
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.titulo {
+
+    color:white;
+    font-family: var(--font1);
+    font-size: 10vw;
+    font-weight: normal;
+
+    background-color:black;
+    text-decoration: none;
+    text-shadow: none;
+
+    width: 100%;
+    
+    text-align: center;
+
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+div > h1 > span {
+    font-size: 10vw;
+}
+
+
+.paragrafos {
+
+    padding: 18vw 30px;
+    width: 100%;
+    background-color: rgb(255, 255, 255); 
+    margin-bottom: 10px;
+
+}
+
+.espaco {
+    padding-top: 18vw;  
+    padding-bottom: 18vw; 
+}
+
+.distanciamentomenor {
+    padding: 0vw 30px;
+    width: 100%;
+    background-color: rgb(255, 255, 255); 
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 2rem;
+    padding: 3vw 3VW;
+    width: 100%;
+    font-style: italic;
+    line-height: 2rem;
+    border-radius: 5px;
+}
+
+.imagem1 {
+    
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_960_720.jpg');
+    background-color: blue ;
+    background-position: center center;
+    background-size: cover;
+    background-attachment:fixed ;
+    animation:Background 30s ease-in-out infinite alternate;
+}
+
+.imagem2 {
+    
+    background-image: url('https://img.freepik.com/fotos-gratis/papel-rasgado-com-fundo-verde-colorido-artesanal_53876-128176.jpg?w=826&t=st=1669390862~exp=1669391462~hmac=a9137d1ac6c999492b526f8d4e98d2839b41870fee3d9bdb7bf3e67549d286c9');
+    background-color: blue ;
+    background-position: left bottom;
+    background-size: cover;
+    background-attachment:fixed ;
+    animation:Background 10s ease-in-out infinite alternate;
+}
+
+@keyframes Background {
+    from{background-position: left top;}
+    to{background-position: left bottom;}
+}
+
+footer{
+    height: 100%;
+
+    background-color: lightblue;
+
+}
+
+.autoria {
+    
+    
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.466);
+
+}
+
+.autoria > p {
+
+    height: 100%;
+    transform: translateY(-0);
+}

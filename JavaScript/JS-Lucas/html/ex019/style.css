@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body {
+    background-size: 300% 300%;
+    background-image: linear-gradient(to left, aquamarine, rgb(0, 61, 41));
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation: gradient 2s ease-in-out alternate infinite;
+}
+
+@keyframes gradient {
+    0% {background-position: 0 0;
+    color: aliceblue;}
+    50% {background-position: 50% 50%;}
+    100% {background-position: 50% 100%;}
+}
+
+@keyframes gradient1 {
+    0% 
+    {
+    background-position: 0 0;
+    color: aliceblue;
+    transform: translateX(-0.5%);}
+
+    50% 
+    {background-position: 50% 50%;}
+
+    100% 
+    {background-position: 50% 100%;
+          transform: translateX(0.5%);}
+}
+
+h1 {
+    color:rgb(1, 107, 107);
+    animation: gradient 2s ease-in alternate infinite;
+}
+
+h2 {
+    animation: gradient 2s ease-in alternate infinite;
+    color:rgb(1, 107, 107);
+}
+
+#principal {
+    text-align: center;
+    height: 2.2rem;
+    animation: gradient1 0.2s ease-in-out alternate infinite;
+}

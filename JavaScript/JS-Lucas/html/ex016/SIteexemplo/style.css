@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    width: 200vh;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #0079c4, #1eb3a4, #9FC131, #99ac0d, #D6D58E);
+    margin-top: 30px;
+}
+
+main {
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+    background-color: white; 
+    border-radius: 5px; 
+    box-shadow: 5px 5px 5px #44442e;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 1px 0px 0px black;
+    color: #13ac41;
+    padding: 10px;
+}
+
+h2{
+    color:#005C53;
+    padding: 10px;
+}
+
+p {
+    text-align: justify;
+}

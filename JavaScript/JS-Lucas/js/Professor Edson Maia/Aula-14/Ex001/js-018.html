@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/4208/4208961.png" type="image/x-icon">
+    <title>Manipulação de dados</title>
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box; font-family: monospace; font-size: 1.1rem;}
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            position: relative;
+            width: 400px;
+            height: 650px;
+            background-color: write;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.596);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form {
+            border-radius: 5px;
+            background-image: linear-gradient(45deg, lightblue 50%, lightgreen);
+            width: 98%;
+            height: 98%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .form .input form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form .input #iResultado{
+            height: 30px;
+        }
+
+        .form .input input{
+            outline: none;
+            padding: 5px;
+            height: 28px;
+            border:1px solid rgba(0, 0, 0, 0.356);
+            border-radius: 5px;
+        }
+
+        .form .input input:focus{
+            border: none;
+            outline: 1px solid lightblue;
+            box-shadow:0 0px 10px lightblue;
+        }
+
+        .form .input input,h3{
+            margin: 10px;
+            color: black;
+        }
+
+        .form #iIMC{
+            background-color: rgba(0, 0, 0, 0.199);
+            text-align: center;
+            color: write;
+        }
+
+        .form .button {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            width: 200px;
+            position: relative;
+        }
+
+        .form .button input{
+            padding: 2px;
+            font-size: 0.9rem;
+            border: 1px solid transparent;
+            flex-grow: 1;
+            background-color: white;
+            transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        }
+
+        .form .button input:hover{
+            border: 1px solid lightblue;
+            flex-grow: 1.5;
+        }
+
+        @media (max-width:415px) {
+            .container{
+                width: 320px;
+                color: rgba(192, 6, 6, 0.514);
+            }
+   
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Nome, idade, peso, altura, imc -->
+    <main>
+        <div class="container">
+            <div class="form">
+                <h1>IMC</h1>
+
+                <div class="input">
+                    <form action="https://www.google.com">
+                    <h3>Nome</h3>
+                    <input type="text" name="nNome" id="iNome" autocomplete="none" autofocus required value="lucas">
+                               
+                    <h3>Idade</h3>
+                    <input type="number" name="nIdade" id="iIdade" autocomplete="none" required value="22">
+                          
+                    <h3>Peso</h3>
+                    <input type="number" name="nPeso" step="0.01" id="iPeso" autocomplete="none" required value="67">
+
+                    <h3>Altura</h3>
+                    <input type="number" name="nAltura" step="0.01" id="iAltura" autocomplete="none" required value="1.78">
+
+                    <h3>IMC</h3>
+                    <input type="text" name="nIMC" id="iIMC" autocomplete="none" disabled placeholder="Resultado">
+                    <span id="iResultado">---</span>
+                </div>
+
+                <div class="button">
+                    <input type="submit" value="ENVIAR" id="btn1">
+                    <input type="submit" value="LIMPAR" id="btn2">
+                </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

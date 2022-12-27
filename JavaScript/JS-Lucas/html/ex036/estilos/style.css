@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: gray;
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+menu > a {
+    padding: 10px;
+    text-align: center;
+    display: block;
+    border: 1px white solid;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, rgb(252, 0, 42), rgb(108, 0, 231));
+}
+
+menu > a:hover {
+    animation: Button 0.1s ease-in-out alternate infinite;
+}
+
+@keyframes Button {
+    to {
+        background: linear-gradient(to right, rgb(108, 0, 231), rgb(252, 0, 42));  
+        transform: scaleX(105%);  
+    }
+}
+
+main > article {
+    
+    padding: 20px;
+    background-color: rgb(207, 201, 201);
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: justify;
+}

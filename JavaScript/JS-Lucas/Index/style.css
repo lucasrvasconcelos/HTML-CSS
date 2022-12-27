@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    pointer-events: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 800px;
+}
+
+.cursos {
+    background-color: lightgray;
+    width: 80%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.cursos .conteudo{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    border-radius: 3px;
+    padding: 10px;
+    flex-grow: 1;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid transparent;
+}
+
+a:hover {
+    flex-grow: 10;
+    border: 1px solid white;
+    color: white;
+}
+
+.html a {
+    background-color: rgb(250, 103, 45);
+}
+
+.JS a {
+    background-color: rgba(94, 255, 0, 0.795);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header {
+    animation: Header-animation 1s both;
+    border-bottom: 1px solid black;
+}
+
+.header-reverse {
+    animation: Header-animation-reverse 1s both;
+}
+
+@keyframes Header-animation {
+    to {
+        background-color: lightblue;
+        padding: 5px;
+    }
+}
+
+@keyframes Header-animation-reverse {
+    from {
+        background-color: lightblue;
+        padding: 5px;
+    }
+    to {
+        background-color: lightgray;
+        padding: 20px;
+    }
+}

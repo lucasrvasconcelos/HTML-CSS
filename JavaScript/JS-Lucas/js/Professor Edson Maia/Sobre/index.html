@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="Pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1199/1199124.png" type="image/x-icon">
+    <title>Java Script</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Curso de Java Script (Front/Back)</h1>
+    </header>
+    <main>
+        <div class="theme">
+            <button class="claro">Claro</button>
+            <button class="escuro">Escuro</button>
+        </div>
+        <div class="conteudo">     
+                <h2>Características do Java Script</h2>
+                <p>1-Todo Navegador Web tem um interpretador front-end do JS.</p>
+                <p>2-V8 é o interpretador JavaScript, também chamado de máquina virtual JS.</p>
+                <p>3-Os códigos podem se embutidos no HTML ou pnkados em arquivos externos.</p>
+                <p>4-Para usar o Js fora dos avegadores, é necessário instalar o Node JS.</p>
+
+                <h2>Exemplo Tag JS</h2>
+                <p id="script" class="texto"> &ltscript&gt <br>("Olá, mundo") <br> &lt/script&gt </p>
+                <button class="btn">Copiar</button>
+                
+                <h2>Link externo</h2>
+                <p id="script" class="texto1"> &ltscript src="arquivo.js"&gt &lt/script&gt<p>
+                <button class="btn1">Copiar</button>
+                
+                <h2>Dicionário</h2>
+                <div class="dicionario">
+                    <a href="../Aula-01/ex001/js-01.html" target="_blank">documents.write("")</a>
+                    <a href="../Aula-01/ex001/js-02.html" target="_blank">console.log("")</a>
+                    <a href="../Aula-01/ex001/js-03.html" target="_blank">alert("")</a>
+                    <a href="../Aula-02/js-04.1.html" target="_blank">JS Externo</a>
+                    <a href="../Aula-02/js-04.html" target="_blank">Variáveis (Var, Let e Const)</a>
+                    <a href="../Aula-03/Ex001/js-05.html" target="_blank">Operadoes matémáticos e outras operações</a>
+                    <a href="../Aula-04/ex001/js-06.html" target="_blank">Array</a>
+                    <a href="../Aula-05/Ex001/js-07.html" target="_blank">Objeto</a>
+                    <a href="../Aula-06/Ex001/js-08.html" target="_blank">NumberFormat</a>
+                    <a href="../Aula-08/Ex001/js-09.html" target="_blank" title="Document Object Model">DOM</a>
+                    <a href="../Aula-08/Ex002/js-010.html" target="_blank">Funcion Copy Text</a>
+                    <a href="../Aula-09/Ex001/js-011.html" target="_blank">setAttribute 1.0</a>
+                    <a href="../Aula-09/Ex001/js-012.html" target="_blank">setAttribute 2.0</a>
+                    <a href="../Aula-10/Ex001/js-013.html" target="_blank">Funções</a>
+                    <a href="../Aula-10/Ex001/js-014.html" target="_blank">input color</a>
+                    <a href="../Aula-11/Ex001/js-015.html" target="_blank">Eventos</a>
+                    <a href="../Aula-12/Ex001/js-016.html" target="_blank">Condições(if else/switch case)</a>
+                    <a href="../Aula-13/Ex001/js-017.html" target="_blank">Estrutura de repetição(For/For Each/While)</a>
+                    <a href="../Aula-14/Ex001/js-018.html" target="_blank">Manipulação de dados(IMC)</a>
+                    <a href="../Aula-15/Ex001/js-019.html" target="_blank">Manipulação de dados(Cálculo média)</a>
+                    <a href="../Aula-16/Ex001/js-020.html" target="_blank">Sorteio DADO</a>
+                    <a href="../Aula-17/Ex001/js-021.html" target="_blank">Adivinhe o valor</a>
+                    <a href="../Aula-19/Ex001/js-022.html" target="_blank">Conversor de moedas</a>
+                    <a href="../Aula-20/Ex001/js-023.html" target="_blank">Conversor de Temperatura</a>
+                    
+                    
+                </div>
+
+                <p>Opcional usar o <strong>";"</strong> no final da instrução.</p>
+
+                <h2>Desafios</h2>
+                <div class="desafios">
+                    <a href="../Desafios/D-001.html" target="_blank">D-001</a>
+                    <a href="../Desafios/Ex001/index.html" target="_blank">D-002</a>
+                    <a href="../Desafios/"></a>
+                    <a href="../Desafios/"></a>
+                </div>
+        </div>
+        <script>
+
+            let variavelTexto = document.querySelector('.texto')
+            let variavelBotao= document.querySelector('.btn')
+
+            variavelBotao.addEventListener('click', copiar)
+
+            function copiar(){
+                navigator.clipboard.writeText(variavelTexto.innerText)
+                variavelBotao.classList.add('copiado')
+                variavelBotao.innerHTML = 'Copiado'
+                variavelBotao.setAttribute('disabled', '')
+                setTimeout(() => {
+                    variavelBotao.classList.remove('copiado')
+                    variavelBotao.innerHTML = 'Copiar'
+                    variavelBotao.removeAttribute('disabled', '')
+                }, 2000);
+            }
+
+            let variavelTexto1 = document.querySelector('.texto1')
+            let variavelBotao1= document.querySelector('.btn1')
+
+            variavelBotao1.addEventListener('click', copia2)
+
+            function copia2(){
+                navigator.clipboard.writeText(variavelTexto1.innerText)
+                variavelBotao1.classList.add('copiado')
+                variavelBotao1.innerHTML = 'Copiado'
+                variavelBotao1.setAttribute('disabled', '')
+                setTimeout(() => {
+                    variavelBotao1.classList.remove('copiado')
+                    variavelBotao1.innerHTML = 'Copiar'
+                    variavelBotao1.removeAttribute('disabled', '')
+                }, 2000);
+            }
+
+
+            document.querySelector('.escuro').addEventListener('click', themeEscuro)
+
+            function themeEscuro(){
+                document.querySelector('body').setAttribute('class', 'dark')
+            }
+
+            document.querySelector('.claro').addEventListener('click', themeClaro)
+
+            function themeClaro(){
+                document.querySelector('body').removeAttribute('class', 'dark')
+            }
+
+    
+
+        </script>
+    </main>
+</body>
+</html>

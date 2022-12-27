@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display-Flex: Row/Center</title>
+    <style>
+
+        * { margin: 0;
+            padding: 0;
+            box-sizing: border-box;}
+
+        body {
+            background-color: lightgrey;
+            /* width: 100vw;
+            height: 100vh; */
+        }
+        
+        
+        .container {
+            width: 100%;
+            height: 70vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            margin: auto;
+            margin-top: 50px;
+            padding: 10px;
+            flex-wrap: nowrap;
+            animation: Wrap 8s ease-in-out both ;
+            align-content: center;
+        }      
+
+        @keyframes Wrap {
+            from{width: 680px}
+            to { width: 350px;}
+         }
+        
+        .box {
+            /* ######################################### */
+            /* ################# Tirando o tamanho das box ##################### */
+            /* width: 100px;
+            height: 100px; */
+            /* ######################################### */
+            margin: 10px;
+            box-shadow: 0 0 10px black;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* ######################################### */
+            /* O PADRÃO É: flex-basis: auto; */
+            flex-basis: 100px;
+            /* ######################################### */
+        }
+
+        .box:hover {
+            transform: scale(130%);
+            box-shadow: 0 0 5px white; 
+        }
+
+        .box-1 {
+            background-color: lightblue;
+            order: 0;
+            flex-shrink: 1; 
+        }
+
+        .box-2 {
+            background-color: lightcoral;
+            order: 0;
+            flex-shrink: 1;
+        }
+
+        .box-3 {
+            background-color: lightgreen;
+            order: 0;
+            flex-shrink: 1;
+        }
+
+        header > h1 {
+            background-color: lightslategrey;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flex-basis</h1>
+    </header>
+    <div class="container">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-1">3</div>
+        <div class="box box-3">4</div>
+        <div class="box box-1">5</div>
+    </div>
+</body>
+</html>

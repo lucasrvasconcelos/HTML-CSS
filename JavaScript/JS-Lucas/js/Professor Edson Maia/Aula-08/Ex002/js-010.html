@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy Text</title>
+    <style>
+        button{
+            width: 100px;
+            cursor: pointer;
+        }
+        .btn {
+            padding: 20px;
+        }
+
+        .Copiado{
+            padding: 20px;
+            background: lightcoral;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Teste</h2>
+    <p id="script" class="texto"> Texto exemplo<p>
+    <button class="btn"> Copiar</button>
+
+    <script>
+
+        let texto = document.querySelector('.texto')
+        let botao = document.querySelector('.btn')
+
+        botao.addEventListener('click', copiar)
+
+        function copiar(){
+            navigator.clipboard.writeText(texto.innerHTML)
+            botao.classList.add('Copiado')  
+            botao.innerHTML = 'Copiado' 
+        }
+
+        setTimeout(()=>{
+            botao.classList.remove('Copiado')  
+            botao.innerHTML = 'Copiar' 
+        }, 2000)
+            
+
+        
+        
+    </script>
+</body>
+</html>

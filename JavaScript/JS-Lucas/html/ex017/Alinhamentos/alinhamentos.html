@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamentos de textos</title>
+    <style>
+       
+
+        body {
+            margin: 2px;
+            padding: 3px;
+            font: normal 16px arial, verdana, serif;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            
+        }
+
+        
+        .box {
+            width: 50vw;
+            height: 50px;
+            margin: 2px;
+            padding: 3px;
+            border: 1px solid black;
+            text-transform: uppercase;
+            font-weight: 600;
+
+            display: flex;
+            align-items: center;
+        }
+        
+        .left{
+            justify-content: left;
+            text-align: left;
+            animation: left 1s ease-in-out alternate infinite;
+        }
+
+        @keyframes left {
+            from{
+                transform: translateX(0%);
+            }
+            to{
+                transform: translateX(-1%);
+            }
+        }
+
+        .right{
+            justify-content: right;
+            text-align: right;
+            animation: right 1s ease-in-out alternate infinite;
+
+        }
+
+        @keyframes right {
+            from{
+                transform: translateX(0%);
+            }
+            to{
+                transform: translateX(1%);
+            }
+        }
+
+        .center{
+            justify-content: center;
+            text-align: center;
+            animation: center 1s ease-in-out alternate infinite;
+        }
+
+        @keyframes center {
+            from{
+                transform: translateY(-1%);
+            }
+            to{
+                transform: translateY(5%);
+            }
+        }
+        
+        .no-justify{
+
+            padding: 2px;
+            text-align: left;
+            border: 1px solid black;
+        }
+
+        .justify{
+            padding: 2px;
+            text-align: justify;
+            border: 1px solid black;
+        }
+
+        .text-ident{
+            text-align: justify;
+            text-indent: 50px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tipos de alinhamenos</h1>
+    <h3>text-align:</h3>
+    
+    <div class="box left">left</div>
+    <div class="box right">right</div>
+    <div class="box center">center</div>
+
+    <h3>Sem text-align:Justify;</h3>
+    <p class="no-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reiciendis veritatis id, unde inventore assumenda animi. Architecto eos magni beatae quae fugit earum rem corrupti asperiores. Et sapiente eveniet veniam.</p>
+
+    <h3>Com text-align:Justify;</h3>
+    <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reiciendis veritatis id, unde inventore assumenda animi. Architecto eos magni beatae quae fugit earum rem corrupti asperiores. Et sapiente eveniet veniam.</p>
+
+    <h3>Com text-ident:50px</h3>
+    <p class="text-ident">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reiciendis veritatis id, unde inventore assumenda animi. Architecto eos magni beatae quae fugit earum rem corrupti asperiores. Et sapiente eveniet veniam.</p>
+    
+    
+</body>
+</html>

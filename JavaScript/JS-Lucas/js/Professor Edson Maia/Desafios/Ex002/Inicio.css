@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;}
+body{
+    background-color: rgba(4, 0, 255, 0.384);
+}
+/* ======================== HEADER =============================*/
+header > .titulo {
+    width: 100vw;
+    text-align: center;
+    padding: 30px;
+    background-color: lightblue;
+}
+/* ========================= MAIN =============================*/
+
+main > .container > .cursos {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-flow: wrap; 
+
+    padding-top: 30px;
+}
+
+main > .container > .cursos > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: calc(150px + 15vw);
+    height: 50px;
+    margin: 4px;
+    padding: 50px;
+
+    border: 1PX solid rgba(0, 0, 0, 0.192);
+    background-color: rgba(0, 0, 255, 0.233);
+
+    color: black;
+    font-size: 1em;
+    text-align: center;
+
+    transition: all 0.5s;
+}
+
+main > .container > .cursos > span:hover {
+    cursor: pointer;
+
+    text-decoration: underline;
+
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.096);
+    text-underline-position: below;
+}
+
+
+/* ======================= FOOTER =============================*/

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe, Name e Target</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            display: flex;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            background-color: lightblue;
+        }
+
+        body > h1 {
+            margin-bottom: 30px;
+            padding: 20px 10px;
+        }
+
+        .links {
+            width: 400px;
+            margin: 30px;
+        }
+
+        .links > a {
+            display: block;
+            width: 250px;
+            padding: 10px 10px;
+            border: 1px solid black;
+            margin: 20px;
+            text-decoration: none;
+            text-align: center;
+            position: -ms-page;
+            background-color: rgb(133, 201, 224);
+            transition: all 0.2s ;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            color:white;
+            border: 1px solid blue;
+            box-shadow: 0 0 10px blue;
+            text-shadow: 0 0 10px white;
+            animation: click 1s ease-in-out infinite alternate;
+        }
+
+        a:active {
+            color:white;
+            border:1px solid white;
+            box-shadow: 0 0 10px ;
+            background-color: lightcoral;
+        }
+
+        @keyframes click {
+            from{
+                background-color: rgba(17, 17, 255, 0.918);
+                box-shadow: 0;
+            }
+            to {
+                background-color: blue;
+                box-shadow: 0 0 10px ;
+            }
+        }
+
+        .video > iframe{
+            width: 700px;
+            height: 500px;
+            border: 1px solid black;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Clique em algum dos links abaixo
+    </h1>
+    <main>
+    <div class="links">
+        <a href="https://www.site.com.br/" target="frame">Site</a>
+        <a href="https://crtsistemas.com.br/" target="frame">CRT Sistemas</a>
+        <a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" target="frame">Wikipedia</a>
+        <a href="https://alunos.b7web.com.br/login" target="frame">B7web</a>
+    </div>
+
+    <div class="video">
+        <!--srcdoc: permite que você digite textos html-->
+        <iframe srcdoc='
+        <h1> Escolha um dos links ao lado </h1>
+        <p>Parágrafo de exemplo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa fuga, ducimus quia architecto eum dignissimos perferendis optio explicabo laboriosam atque consectetur, sed vero voluptatem qui, repellat omnis quo sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa culpa itaque suscipit nam quibusdam optio impedit voluptatibus explicabo ad magni vero, temporibus quis ut qui excepturi cum sapiente rem ullam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente et cum veritatis suscipit minima, aut odit hic ipsam sint optio nihil, labore temporibus ut, dolorum qui quia tempora quam fugit.</p>
+        <h1>Fim</h1>
+        ' name="frame" width="300px"></iframe>
+    </div>
+    </main>
+    
+</body>
+</html>

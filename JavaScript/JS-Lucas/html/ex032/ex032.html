@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body {
+            margin: auto;
+            width: 800px;
+            padding: 50px;
+
+        }
+
+        body > h1 {
+            text-align: center;
+        }
+
+        p {
+            
+            width: fit-content;
+            padding: 10px;
+            background-color: lightblue;
+        }
+
+        label > p {
+            width: fit-content;
+            padding: 10px;
+            background-color: lightcoral;
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+
+        .botao-center{
+            margin: 10px;
+            padding: 10px;
+        }
+
+        ::-webkit-scrollbar{width: 0; height:0;}
+
+    </style>
+</head>
+<body>
+    <h1>Formulários</h1>
+
+    <p>Form: tag referênte ao formulário</p>
+    <p>Autocomplete: Eu digo se deve ultilizar os valores armazenados no cache do navegador. Usando na tag form só tem a opções de on e off. Usando nas tags de imputs, você especifica qual tipo de dado é pra trazer no auto complete.(autocomplete="username" Por exemplo)</p>
+
+    <form action="cadastro.php" target="_blank" method="post">
+        <label for="Itexto">
+            <p>Exemplo Autocomplete:
+                <input type="text" name="Texto" id="Itexto">
+            </p>
+        </label>
+
+        <label for="Itexto2">
+            <p>Exemplo sem autocomplete:
+                <input type="text" name="Texto2" id="Itexto2" autocomplete="off">
+            </p>
+        </label>
+                <input type="submit" value="Clique aqui">
+    </form>
+
+    <p>Label: Onde eu referencio uma tag de texto a aquele input</p>
+    <p>Input: É a tag onde iremos especificar qual tipo de formulário iremos pedir</p>
+    <p>Action: É onde eu digo qual ação aquele formulário vai ter </p>
+    <p>Method: Eu digo o método do formulário. Post ou Get</p>
+    <p>Get: Mostra os dados na URL</p>
+    <p>Post: Não mostra os dados na URL</p>
+    <p>Placeholder: Mostrar algum valor no funco da caixa</p>
+    <p>min-lenght: Valor mínimo para ser digitado</p>
+    <p>max-lenght: Valor máximo para ser digitado</p>
+    <p>min: Valor mínimo para números</p>
+    <p>max: Valor máximo para números</p>
+    <p>size: Quantidade de letras para serem mostradas</p>
+    <p>Required: Para dizer que aquele campo é obrigatório</p>
+    <p>step: Onde eu informo de quanto em quanto meu numero vai pular, ultilizado no input do tipo number</p>
+    <p>Value: eu digo um valor padrão no imput, caso eu já queira que o formulário já selecione uma data específica por exemplo</p>
+    <p>Checked: Já deixa o checkbox ou radio marcado</p>
+    <p>option: É para eu colocar as opções disponíveis em em conjunto com as tags select ou datalist</p>
+
+    <h1>Alguns tipos de input</h1>
+    <p>Text, reset, password, submit, number, month, date, time, checkbox, radio, color, range, file</p>
+
+    <form action="cadastro.php" target="_blank" method="post">
+        <label for="iPlaceholder">
+            <p>
+                Placeholder - min/maxlength - size - required
+                <input type="text" name="Placeholder" id="iPlaceholder" placeholder="Texto exemplo" minlength="5" maxlength="10" size="20" required autocomplete="name">
+            </p>
+        </label>
+                <input type="submit" value="Clique aqui">
+                <input type="reset" value="Limpar">
+    </form>
+
+    <hr>
+
+    <form action="cadastro.php" target="_blank" method="post">
+        <label for="inome-aluno">
+            <p>Nome: 
+            <input type="text" name="nome-aluno" id="inome-aluno" placeholder="Nome aluno"> </p>
+        </label>
+        <label for="inota">
+            <p>Senha: 
+            <input type="number" name="nota" id="inota" placeholder="STEP: 0.1" step="0.1" required min="0" max="10"></p>
+        </label>
+            <label for="idate">
+                <p>Período letivo
+                <input type="date" name="date" id="idate" required value="2000-09-25" ></p>
+            </label>
+            <label for="ihora">
+                <p>Horário
+                <input type="time" name="hora" id="ihora" required value="13:00" ></p>
+            </label>
+            <input type="submit" value="Confirmar">
+            <input type="reset" value="Limpar">
+    </form>
+
+    <hr>
+    
+        <h1>Fieldset e Legend</h1>
+    
+        <fieldset>
+            <legend>Nome, Email e Telefone</legend>
+            <form action="cadastro.php">
+                <label for="Iemail">
+                    <p>Email:
+                        <input type="email" name="email" id="Iemail">
+                    </p>
+                </label>
+                <label for="Itelefone">
+                    <p>Telefone:
+                        <input type="tel" name="telefone" id="Itelefone">
+                    </p>
+                </label>
+            </form>
+        </fieldset>
+    
+        <h1>Checkbox e Radio</h1>
+        
+        <fieldset class="flex">
+            <legend>Esporte favorito</legend>
+            <label for="iFutebol">
+                <p>
+                    Futebol <input type="checkbox" name="Futebol" id="iFutebol">
+                </p>
+            </label>
+            <label for="iBasquete">
+                <p>
+                    Basquete <input type="checkbox" name="Basquete" id="iBasquete">
+                </p>
+            </label>
+            <label for="iTênis">
+                <p>
+                    Tênis <input type="checkbox" name="Tênis" id="iTênis">
+                </p>
+            </label>
+            <label for="iNatação">
+                <p>
+                    Natação <input type="checkbox" name="Natação" id="iNatação">
+                </p>
+            </label>
+            <label for="IFutsal">
+                <p>
+                    Futsal <input type="checkbox" name="Futsal" id="IFutsal" checked>
+                </p>
+            </label>
+        </fieldset>
+
+        <form action="cadastro.php" target="_blank">
+            <fieldset class="flex">
+
+                <legend>Sexo</legend>
+        
+                <label for="iMasculino">
+                    <p>
+                        Masculino <input type="radio" name="sexo" id="iMasculino" value="Masculino" checked>
+                    </p>
+                </label>
+
+                <label for="iFeminino">
+                    <p>
+                        Feminino  <input type="radio" name="sexo" value="Feminino" id="iFeminino">
+                    </p>
+                </label>
+
+            </fieldset>
+    
+            <div class="flex"><input type="submit" value="Enviar Formulário" class="botao-center"></div>
+
+        </form>
+
+        <h1>Color, Range e File</h1>
+
+        <fieldset>
+            <legend>Selecione as opções abaixo</legend>
+            <form action="post" target="_blank">
+                <label for="Icolor">
+                    <p>
+                        Selecione uma cor <input type="color" value="#00ff00"  name="color" id='Icolor' >
+                    </p>
+                </label>
+
+                <label for="iRange">
+                    <p>
+                        Selecione um Range <input type="range" min="0" max="5" value="0" name="Range" id="iRange">
+                    </p>
+                </label>
+
+                <label for="iFile">
+                    <p>
+                        Escolha um arquivo <input type="file" name="File" id="iFile">
+                    </p>
+
+                </label>
+                        <input type="submit" value="Enviar formulário">
+                </form>
+        </fieldset>
+
+        <h1>Select, optgroup, option, datalist </h1>
+
+        <fieldset>
+            <legend>Exemplo select</legend>
+            <form action="cadastro.php" target="_blank">
+                <label for="Iestados">
+                    <p>
+                        Escolha um estado
+                        <select name="Estados" id="Iestados">
+            
+                            <optgroup label="Ceará">
+                                <option value="Fortaleza">Fortaleza</option>
+                                <option value="Caucaia">Caucaia</option>
+                                <option value="Rio Grande Do norte" selected>Rio Grande Do Norte</option>
+                                <option value="Maracanau">Maracanau</option>
+                                <option value="Pacatuba">Pacatuba</option>
+                                <optgroup label="Bahia">
+                                    <option value="SALVADOR">SALVADOR</option>
+                                    <option value="FEIRA DE SANTANA">FEIRA DE SANTANA</option>
+                                    <option value="VITÓRIA DA CONQUISTA">VITÓRIA DA CONQUISTA</option>
+                                    <option value="CAMAÇARI">CAMAÇARI</option>
+                                    <option value="JUAZEIRO">JUAZEIRO</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                </label>
+            </form>
+        </fieldset>
+
+        <fieldset>
+            <form action="cadastro.php">
+                <label for="iProfissão">
+                    <p>
+                        Escolha uma profissão 
+                        <input type="text" name="Profissão" id="iProfissão" list="listprof" placeholder="Selecione ou Digite">
+                        <!-- É necessário no input dizer o id da lista -->
+                        <datalist id="listprof">
+                            <option value="Desenvolvedor"></option>
+                            <option value="Professor"></option>
+                            <option value="Engenheiro"></option>
+                        </datalist>
+                    </p>
+                </label>
+                <label for="Itext">
+                    <p>Digite Algum texto</p>
+                    <textarea name="text" id="Itext" cols="30" rows="10" style="min-width: 600px; max-width: 600px; min-height: 100px;max-height: 100px;"></textarea>
+                </label>
+            </form>
+        </fieldset>
+    
+</body>
+</html>

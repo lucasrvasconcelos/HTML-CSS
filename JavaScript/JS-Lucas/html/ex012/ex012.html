@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando vídeos a minha página</title>
+</head>
+<style>
+    video{
+        width: 300px;
+        height: 300px;
+    }
+</style>
+<body>
+    <h1>Exemplo de vídeo (SERVIDOR LOCAL)</h1>
+    <p>Assim como o audio o video usa os mesmo parâmetros e também tem duas formas de adicionar. controls, muted, autoplay e um novo com o nome "poster" que tem a função de mostrar uma imagem antes do vídeo ser executado </p>
+
+    <video src="Video/Video.mp4" controls muted ></video>
+
+    <video controls muted poster="Imagem/300px.png">
+        <!-- source:src -->
+        <source src="Video/Video.mp4" type="video/mp4">
+    </video>
+
+    <h1>Acrescentando vídeo de outros servidores(youtube)</h1>
+
+    <iframe width="300px" height="300px" src="https://www.youtube.com/embed/jr4_vuZhoCA" title="SET WESLEY ALEMÃO - Lipi, Paulin da Capital, Lemos, Gabb, Paiva, Lele, Piedro e Ryan SP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

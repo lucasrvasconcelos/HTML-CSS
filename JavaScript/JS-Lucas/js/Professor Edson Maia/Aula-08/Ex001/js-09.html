@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-08</title>
+</head>
+<body>
+    <h1 id="titulo">Aula 8</h1>
+
+    <div class="box">
+        <h2 class="titulo">Box 1</h2>
+        <p class="textos">Texto 1</p>
+    </div>
+
+    <div class="box">
+        <h2 class="titulo">Box 2</h2>
+        <p class="textos">Texto 2</p>
+    </div>
+
+    <div class="box">
+        <h2 class="titulo">Box 3</h2>
+        <p class="textos">Texto 3</p>
+    </div>
+    <script>
+        console.log('document.querySelector("h1")')
+        console.log(document.querySelector('h1'))
+        document.querySelector('h1')
+
+        console.log('document.querySelector(".box")')
+        console.log(document.querySelector('.box'))
+        document.querySelector('.box')
+
+        console.log('document.querySelectorAll(".textos")')
+        console.log(document.querySelectorAll('.textos'))
+        document.querySelector('.textos')
+
+        
+        let a = document.querySelector('#titulo')
+        console.log('Pegando apenas o valor da tag')
+        console.log(a.textContent)
+
+        console.log('Mudando o valor da tag')
+        a.textContent = 'Mudei o Título'
+        console.log(a.textContent)
+
+        console.log('Pegando todas as divs, classes')
+        //Escrevendo o valor das variáveis
+        a = document.querySelectorAll('.textos')
+        document.write(`${a[0].textContent}`)
+        document.write(`${a[1].textContent}`)
+        document.write(`${a[2].textContent}<br>`)
+        a[2].textContent = 'Mudei o valor'
+        document.write(`${a[0].textContent}`)
+        document.write(`${a[1].textContent}`)
+        document.write(`${a[2].textContent}`)
+
+        //Trazendo todas as divs
+        let h1 = document.getElementsByTagName('h1')
+        console.log(h1)
+
+        //Trazendo todas as classes
+        let box = document.getElementsByClassName('box')
+        console.log(box)
+    </script>
+</body>
+</html>

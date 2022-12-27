@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: monospace;}
+
+.dark {
+    background-color: lightslategrey;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+    background-color: lightblue;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.theme {
+    width: 320px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.theme button {
+    width: 100px;
+    padding: 5px;
+    cursor: pointer;
+    flex-grow: 1;
+    transition: all 0.2s ease-in-out;
+    font-size: 1.2rem;
+    border: 0.2px solid black;
+}
+
+.theme button:hover {
+    box-shadow: 0 0 5px lightslategray;
+    flex-grow: 1.2;
+}
+
+.escuro{
+    background-color: lightslategrey;
+}
+
+.claro{
+    background-color: white;
+}
+.conteudo {
+    padding: 20px;
+    max-width: 650px;
+    font-size: 1.1rem;
+}
+
+.conteudo h2 {
+    padding: 5px 0;
+}
+
+.conteudo p {
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.conteudo #script {
+    background-color: lightsteelblue;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.conteudo button {
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border: 0.5px solid lightsteelblue;
+    outline: none;
+    cursor: pointer;
+    width: 80px;
+    padding: 5px;
+    transition: all 0.2s;
+}
+
+.copiado {
+    color: white;
+    border: 0.5px solid black;
+}
+
+.conteudo button:hover {
+    box-shadow: 0 0 5px lightslategray;
+}
+
+.conteudo .dicionario {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.conteudo .dicionario a {
+    text-align: center;
+    flex-grow: 1;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    background-color: lightsteelblue;
+    transition: all .3s;
+}
+
+.conteudo .dicionario a:hover {
+    flex-grow: 100;
+    box-shadow: 0 0 10px black;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%% DESAFIOS %%%%%%%%%%%%%%%%%%%%%%% */
+
+.conteudo .desafios {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.conteudo .desafios a {
+    text-align: center;
+    flex-grow: 1;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    background-color: lightcoral;
+    transition: all .3s;
+}
+
+.conteudo .desafios a:hover {
+    flex-grow: 100;
+    box-shadow: 0 0 10px black;
+}

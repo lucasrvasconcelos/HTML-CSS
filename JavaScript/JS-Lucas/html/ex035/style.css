@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+
+@media all {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: monospace;
+    }
+    
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .meio {
+        width: 400px;
+        height: 400px;
+        background: lightblue;
+    }
+    
+    .meio {
+        text-align: justify;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    .paisagem {
+        display: none;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    .meio {
+        background-color: brown;
+    }
+    
+    .retrato {
+        display: none;
+    }
+}

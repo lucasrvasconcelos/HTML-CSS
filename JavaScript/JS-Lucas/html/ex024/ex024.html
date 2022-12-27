@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabeçalho fixo</title>
+
+    <style>
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: absolute;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .idade {
+            text-align: center;
+        }
+
+        caption {
+            border: 1px solid black;
+            padding: 10px;
+            font-size: 1.5em;
+            background-color: lightgray;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            background-color:rgb(207, 253, 99); ;
+            top: 0;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: lightgray;
+            font-weight: bold;
+        }
+        tbody tr:nth-child(even) {
+            background-color: rgb(255, 255, 255);
+
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Cabeçalho fixo</h1>
+    <p>A primeira coisa que terá que fazer é colocar a tag TABLE position: absolute</p>
+    <p>Depois disso você vai no css da tag TH e coloca position: sticky(Colar) e definir um top:0 para ele colar quando chegar na posição 0</p>
+    <p>Lembrar de colocar a cor do background, pois ele não herda</p>
+
+    <table>
+
+        <caption>Cabeçalho fixo(Role a página)</caption>
+
+        <thead>
+            <tr>
+                <!-- Scope: É pra indicar onde está o dado desse título que colocamos, se está na mesma linha ou coluna -->
+                <th scope="col">Nome</th>
+                <!-- Scope: É pra indicar onde está o dado desse título que colocamos, se está na mesma linha ou coluna -->
+                <th scope="col" style="width:30px;">Idade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Lucas</td>
+                <td class="idade">22</td>
+            </tr>
+            <tr>
+                <td>Karina</td>
+                <td class="idade">20</td>
+            </tr>
+            <tr>
+                <td>Débora</td>
+                <td class="idade">14</td>
+            </tr>
+            <tr>
+                <td>Verônica</td>
+                <td class="idade">44</td>
+            </tr>
+            <tr>
+                <td>Francisco</td>
+                <td class="idade">49</td>
+            </tr>
+            <tr>
+                <td>Aninha</td>
+                <td class="idade">23</td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td class="idade">22</td>
+            </tr>
+            <tr>
+                <td>Karina</td>
+                <td class="idade">20</td>
+            </tr>
+            <tr>
+                <td>Débora</td>
+                <td class="idade">14</td>
+            </tr>
+            <tr>
+                <td>Verônica</td>
+                <td class="idade">44</td>
+            </tr>
+            <tr>
+                <td>Francisco</td>
+                <td class="idade">49</td>
+            </tr>
+            <tr>
+                <td>Aninha</td>
+                <td class="idade">23</td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td class="idade">22</td>
+            </tr>
+            <tr>
+                <td>Karina</td>
+                <td class="idade">20</td>
+            </tr>
+            <tr>
+                <td>Débora</td>
+                <td class="idade">14</td>
+            </tr>
+            <tr>
+                <td>Verônica</td>
+                <td class="idade">44</td>
+            </tr>
+            <tr>
+                <td>Francisco</td>
+                <td class="idade">49</td>
+            </tr>
+            <tr>
+                <td>Aninha</td>
+                <td class="idade">23</td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td class="idade">22</td>
+            </tr>
+            <tr>
+                <td>Karina</td>
+                <td class="idade">20</td>
+            </tr>
+            <tr>
+                <td>Débora</td>
+                <td class="idade">14</td>
+            </tr>
+            <tr>
+                <td>Verônica</td>
+                <td class="idade">44</td>
+            </tr>
+            <tr>
+                <td>Francisco</td>
+                <td class="idade">49</td>
+            </tr>
+            <tr>
+                <td>Aninha</td>
+                <td class="idade">23</td>
+            </tr>
+                            <td>Lucas</td>
+                <td class="idade">22</td>
+            </tr>
+            <tr>
+                <td>Karina</td>
+                <td class="idade">20</td>
+            </tr>
+            <tr>
+                <td>Débora</td>
+                <td class="idade">14</td>
+            </tr>
+            <tr>
+                <td>Verônica</td>
+                <td class="idade">44</td>
+            </tr>
+            <tr>
+                <td>Francisco</td>
+                <td class="idade">49</td>
+            </tr>
+            <tr>
+                <td>Aninha</td>
+                <td class="idade">23</td>
+            </tr>
+                <td>Lucas</td>
+                <td class="idade">22</td>
+            </tr>
+            <tr>
+                <td>Karina</td>
+                <td class="idade">20</td>
+            </tr>
+            <tr>
+                <td>Débora</td>
+                <td class="idade">14</td>
+            </tr>
+            <tr>
+                <td>Verônica</td>
+                <td class="idade">44</td>
+            </tr>
+            <tr>
+                <td>Francisco</td>
+                <td class="idade">49</td>
+            </tr>
+            <tr>
+                <td>Aninha</td>
+                <td class="idade">23</td>
+            </tr>
+            <td>Lucas</td>
+                <td class="idade">22</td>
+            </tr>
+            <tr>
+                <td>Karina</td>
+                <td class="idade">20</td>
+            </tr>
+            <tr>
+                <td>Débora</td>
+                <td class="idade">14</td>
+            </tr>
+            <tr>
+                <td>Verônica</td>
+                <td class="idade">44</td>
+            </tr>
+            <tr>
+                <td>Francisco</td>
+                <td class="idade">49</td>
+            </tr>
+            <tr>
+                <td>Aninha</td>
+                <td class="idade">23</td>
+            </tr>
+            <td>Lucas</td>
+                <td class="idade">22</td>
+            </tr>
+            <tr>
+                <td>Karina</td>
+                <td class="idade">20</td>
+            </tr>
+            <tr>
+                <td>Débora</td>
+                <td class="idade">14</td>
+            </tr>
+            <tr>
+                <td>Verônica</td>
+                <td class="idade">44</td>
+            </tr>
+            <tr>
+                <td>Francisco</td>
+                <td class="idade">49</td>
+            </tr>
+            <tr>
+                <td>Aninha</td>
+                <td class="idade">23</td>
+            </tr>
+            <td>Lucas</td>
+                <td class="idade">22</td>
+            </tr>
+            <tr>
+                <td>Karina</td>
+                <td class="idade">20</td>
+            </tr>
+            <tr>
+                <td>Débora</td>
+                <td class="idade">14</td>
+            </tr>
+            <tr>
+                <td>Verônica</td>
+                <td class="idade">44</td>
+            </tr>
+            <tr>
+                <td>Francisco</td>
+                <td class="idade">49</td>
+            </tr>
+            <tr>
+                <td>Aninha</td>
+                <td class="idade">23</td>
+            </tr>
+            <td>Lucas</td>
+                <td class="idade">22</td>
+            </tr>
+            <tr>
+                <td>Karina</td>
+                <td class="idade">20</td>
+            </tr>
+            <tr>
+                <td>Débora</td>
+                <td class="idade">14</td>
+            </tr>
+            <tr>
+                <td>Verônica</td>
+                <td class="idade">44</td>
+            </tr>
+            <tr>
+                <td>Francisco</td>
+                <td class="idade">49</td>
+            </tr>
+            <tr>
+                <td>Aninha</td>
+                <td class="idade">23</td>
+            </tr>
+            
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <!-- Scope: É pra indicar onde está o dado desse título que colocamos, se está na mesma linha ou coluna -->
+                <th scope="row">Total de pessoas</th>
+                <td class="idade"><strong>999</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>

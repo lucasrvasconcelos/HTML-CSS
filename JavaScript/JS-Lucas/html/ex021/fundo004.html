@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento background v2</title>
+    <style>
+
+        main {
+            display: block;
+        }
+
+        .box {
+            display: flex;
+        }
+
+        @media (width:360px) {
+            .box {
+                display: block;
+            }
+        }
+
+        div, h1 {
+            margin: 10px;
+        }
+
+
+        .q1 {
+            background-color: lightblue;
+            width: 300px;
+            height: 300px;
+
+            border: 1px black solid;
+            border-radius:10px;
+
+            background-image: url('https://cdn-icons-png.flaticon.com/512/1650/1650555.png');
+            background-size: 100px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            transition: 0.2s ease-in;
+        }
+
+        .q1:hover{
+            background-size: 110px;
+            cursor: pointer;
+        }
+
+        
+        .q2 {
+
+            background-color: lightblue;
+            width: 300px;
+            height: 300px;
+            border: 1px black solid;
+
+            border: 1px black solid;
+            border-radius:10px;
+
+            background-image: url('https://cdn-icons-png.flaticon.com/512/1650/1650555.png');
+            background-size: 100px;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            transition: 1s;
+        }
+
+
+        .q2:hover {
+            background-position: left bottom;
+            background-position: left;;
+            cursor: pointer;
+        }
+
+        .q3 {
+
+            background-color: lightblue;
+            width: 300px;
+            height: 300px;
+            border: 1px black solid;
+
+            border: 1px black solid;
+            border-radius:10px;
+
+            background-image: url('https://cdn-icons-png.flaticon.com/512/1650/1650555.png');
+            background-size: 100px;
+            background-repeat: no-repeat;
+            transition: 1s;
+            background-position:center;
+        }
+
+        .q3:hover {
+            background-position: left bottom;
+            background-position:bottom right;
+            cursor: pointer;
+        }
+
+        
+        .q4 {
+
+            background-color: lightblue;
+            width: 300px;
+            height: 300px;
+            border: 1px black solid;
+
+            border: 1px black solid;
+            border-radius:10px;
+
+            background-image: url('https://cdn-icons-png.flaticon.com/512/1650/1650555.png');
+            background-size: 100px;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: 1s;
+        }
+
+        .q4:hover {
+            background-position: left bottom;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <main>
+
+    <div class="title">
+    <h1>Coloque o mouse em cima das box</h1>
+    </div>
+
+    <div class="box">
+    <div class="q1" title="background-position: center center;"></div>
+    <div class="q2" title="background-position: left;"></div>
+    <div class="q3" title="background-position:bottom right;"></div>
+    <div class="q4" title="background-position: left bottom;"></div>
+    </div>
+
+    </main>
+    
+</body>
+</html>

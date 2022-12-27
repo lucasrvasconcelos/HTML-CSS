@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/9105/9105462.png" type="image/x-icon">
+    <title>JS 04</title>
+    <style>
+        body {
+            font-weight: normal;
+            font-size: 1em;
+            background-color: rgb(138, 224, 253);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            margin: auto;
+            width: 800px;
+
+        }
+
+        p {
+            border: 1px solid;
+            border-radius: 5px;
+            width: fit-content;
+            padding: 5px;
+            background-color: lightcoral;
+        }
+
+        p:hover {
+            box-sizing: border-box;
+            animation: P-Animation 0.2s ease-in-out both;
+            box-shadow: 0 0 10px coral;
+            cursor: pointer;
+        }
+
+
+        code {
+            border-radius: 5px;
+            padding: 10px;
+            background-color: lightsalmon;
+        }
+
+        code:hover {
+            animation: code-animation 0.5s ease-in-out both;
+            cursor: pointer;
+        }
+
+
+        @keyframes P-Animation {
+            to {transform: translateY(-15%);
+            border: 1px solid black;}
+        }
+        
+        @keyframes code-animation {
+            to{background-color: salmon;}
+        }
+    </style>
+</head>
+
+<body>
+
+
+</body>
+
+<script>
+    var nome = window.prompt('Digite o seu nome: ')
+    document.write(`Seu nome é ${nome} e tem o tamanho de ${nome.length} <br>`)
+    document.write(`Transformando seu nome em maiúsculo fica ${nome.toUpperCase()} <br>`)
+    document.write(`Transformando seu nome em minúsculo fica ${nome.toLowerCase()} <br>`)
+</script>
+</html>
