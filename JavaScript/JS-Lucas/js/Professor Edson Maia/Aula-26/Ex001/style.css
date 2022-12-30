@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.226);
+}
+
+main {
+    
+    width: 320px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: lightblue;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.322);
+}
+
+main .input{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 0;
+}
+
+main .input input{
+    height: 25px;
+    border-radius: 5px;
+    border: 0.5px solid rgba(0, 0, 0, 0.301);
+}
+
+main .input input:focus{
+    outline: 1px solid rgba(0, 0, 0, 0.562);
+}
+
+main .input label, input{
+    width: 40%;
+}
+
+main .submit button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0.1px solid rgba(0, 0, 0, 0.315);
+    background-color: white;
+    cursor: pointer;
+    transition: all .2s ;
+    outline: none;
+}
+
+main .submit button:hover {
+    transform: translateY(-10%);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.281);
+}
+
+.erro {
+    outline: 1px solid red;
+}
+
+.resultado{
+    width: 100%;
+    text-align: center;
+    text-align: justify;
+    height: fit-content;
+    word-wrap: break-word;
+    padding: 0 10px;
+}
+
+
